@@ -1,0 +1,1 @@
+# jquery-safe-submit
