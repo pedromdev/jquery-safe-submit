@@ -1,6 +1,6 @@
 # jQuery Safe Submit
 
-A forma mais segura e prática de enviar dados dos formulários para serviços na web. 
+A forma mais garantida e prática de enviar dados dos formulários para serviços na web.
 
 ## Assets
 
