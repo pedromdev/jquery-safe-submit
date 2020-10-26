@@ -105,7 +105,7 @@ O código a seguir é um exemplo simples de uso:
     $('#form')
       .serviceUrl('https://servico1.com/dados', 'POST')
       .serviceUrl('https://servico2.com/dados', 'POST')
-      .fieldsMap({
+      .fieldsMap({ // Para: https://servico1.com/dados
         nome: '#nome',
         cpf: function () {
           var cpf = $('#cpf').val()
@@ -126,7 +126,7 @@ O código a seguir é um exemplo simples de uso:
           $('#error').text(err.message).show();
         }
       })
-      .fieldsMap({
+      .fieldsMap({ // Para: https://servico2.com/dados
         nome: '#nome',
         cpf: function () {
           var cpf = $('#cpf').val()
@@ -175,8 +175,8 @@ O código a seguir é um exemplo simples de uso:
     $('#form')
       .serviceUrl('https://servico1.com/dados', 'POST')
       .serviceUrl('https://servico2.com/dados', 'POST')
-      .fieldsMap(fieldsMap, events)
-      .fieldsMap(fieldsMap, events);
+      .fieldsMap(fieldsMap, events) // Para: https://servico1.com/dados
+      .fieldsMap(fieldsMap, events); // Para: https://servico2.com/dados
   });
 </script>
 ```
